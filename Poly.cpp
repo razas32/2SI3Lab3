@@ -2,7 +2,9 @@
 
 Poly::Poly()
 {
-	// TODO	
+	// TODO
+	head = (PolyNode*)calloc(1, sizeof(PolyNode)); // Allocates memory
+	*head = PolyNode(-1, 0, NULL); //zero polynomial with degree = -1	
 }
 
 Poly::Poly(const std::vector<int>& deg, const std::vector<double>& coeff)
